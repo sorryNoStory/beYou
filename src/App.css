@@ -1,38 +1,692 @@
-.App {
-  text-align: center;
+body {
+  background-color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* First screen */
+.mainScreen {
+  background-image: url("./img/backr-img/main-img.jpg");
+  background-position: 0% 85%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: italic;
+  padding: 2%;
+  text-decoration: none;
+  color: #1C7947;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navItem {
+  padding: 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: #1C7947;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.navItem:hover {
+  text-decoration: underline;
+  text-underline-offset: 50%;
+  font-weight: 500;
+  color: #1C7947;
+}
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 60px;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+}
+
+.containerMain {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 60%;
+  margin-right: 2%;
+}
+
+.heading, .subHeading {
+  color: #1C7947;
+  font-family: 'Poppins', sans-serif;
+  margin: 3% 0;
+}
+
+.par {
+  color: #51697f;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
+  margin: 5% 0;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.subHeading {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.buybtn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: #6cb0d4ca;
+  border: 1px solid rgba(255, 255, 255, 0.898);
+  color: rgba(255, 255, 255, 0.898);
+  padding: 6px 15px;
+  font-weight: 400;
+  margin-top: 1%;
+}
+
+.buybtn:hover {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #aee3ffca;
+  border: 1px solid #72b2dc;
+  color: #1C7947;
+}
+
+/* Advantages in numbers */
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #72b2dcc1;
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 1px 3px #72b2dcdc inset;
   }
-}
+  
+  .adv {
+  margin: 3%;
+  text-align: center;
+  }
+  
+  .adv h3 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  color: #1271b0e6;
+  }
+  
+  .adv h3:hover {
+  color: #07446ce6;
+  cursor: pointer;
+  }
+  
+  .adv p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Why us? */
+.whyUs {
+  background-color: #71bee86b;
+  display: inline-block;
+  }
+  
+  .contentWhy {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 3%;
+  }
+  
+  .Whyitems {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  width: 80%;
+  }
+  
+  .whyitem {
+  text-align: center;
+  flex: 1;
+  width: 25%;
+  margin: 5%;
+  }
+  
+  .headtwo {
+  font-size: 38px;
+  color: #1271b0e6;
+  font-weight: 600;
+  margin: 2%;
+  }
+  
+  .icon {
+  width: 60px;
+  }
+  
+  .whyitem h3 {
+  font-size: 20px;
+  color: #1271b0e6;
+  font-weight: 500;
+  }
+  
+  .contentWhy p {
+  font-size: 15px;
+  text-align: center;
+  color: #51697f;
+  margin: 2%;
+  }
+
+/* About us */
+
+.aboutus {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #71bee86b;
+  padding: 2% 0%;
+  }
+  
+  .waterblock {
+  position: relative;
+  width: 35%;
+  margin: 5% 5%;
+  }
+  
+  .waterser {
+  opacity: 95%;
+  width: 400px;
+  box-shadow: 0px 0px 50px #4889abd0;
+  }
+  
+  .abouttext {
+  margin: 2% 5%;
+  width: 40%;
+  }
+  
+  .drops {
+  width: 60px;
+  position: absolute;
+  bottom: 90%;
+  right: 96%;
+  }
+  
+  .abouttext {
+  font-family: 'Poppins', sans-serif;
+  }
+  
+  .abouttext h2 {
+  font-size: 35px;
+  color: #1271b0e6;
+  font-weight: 500;
+  margin: 5% 0%;
+  }
+  
+  .abouttext p {
+  font-size: 13px;
+  color: #51697f;
+  font-style: italic;
+  margin: 5% 0%;
+  }
+
+/* Products */
+
+.prodimg {
+  width: 55px;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  background-color:rgba(255, 255, 255, 0.806);
+  box-shadow: 2px 2px 12px rgba(89, 87, 87, 0.118);
+  padding: 10px;
+  }
+  
+  .products {
+  display: flex;
+  flex-direction: column;
+  background-color:aliceblue;
+  text-align: center;
+  padding: 3%;
+  box-shadow: inset 2px 2px 12px rgba(89, 87, 87, 0.118);
+  }
+  
+  .productitem h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  }
+  
+  .productItems {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+  
+  .productitem {
+  width: 150px;
+  margin: 2%;
+  }
+  
+  .products h2 {
+  font-size: 30px;
+  color: #1472b1e6;
+  font-weight: 400;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  }
+
+/* Partners */
+.plogo {
+  padding: 15px;
+  margin: 10px 25px;
+  }
+  
+  .lf,
+  .sephora {
+  width: 200px;
+  }
+  
+  .iherb,
+  .careto {
+  height: 60px;
+  }
+  
+  .plogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1%;
+  box-shadow: inset 2px 2px 12px rgba(89, 87, 87, 0.118);
+  background-color: white;
+  }
+
+/* Reviews */
+.testimonials{
+  padding: 5%;
+  background-color:aliceblue;
+  }
+  
+  .sliderimg{
+  width:60px;
+  height:80px;
+  border-radius:50%;
+  align-self:center;
+  margin:25px;
+  box-shadow:5px 5px 10px #19263890;
+  }
+  
+  .slider{
+  display:flex;
+  justify-content:center;
+  }
+  
+  .reviewtext{
+  width:35%;
+  font-family:'Poppins',sans-serif;
+  font-weight:300;
+  font-size:13px;
+  font-style:italic;
+  padding:5px;
+  }
+  
+  .sliderbtn{
+  align-self:center;
+  background-color:transparent;
+  border:none;
+  }
+  
+  .btnicon{
+  width:45px;
+  margin:0 10px;
+  }
+  
+  .btnicon:hover{
+  cursor:pointer;
+  width:50px;
+  }
+  
+  .testimon{
+  text-align:center;
+  font-family:'Poppins',sans-serif;
+  font-size:30px;
+  color:#1472b1e6;
+  font-weight:400;
+  margin-bottom:5%;
+  }
+
+/* Payment */
+.buyserum {
+  background-color: aliceblue;
+  padding: 5% 2%;
+  }
+  
+  .buyserum h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: #1472b1e6;
+  font-weight: 400;
+  }
+  
+  .serumpay {
+  display: flex;
+  justify-content: center;
+  }
+  
+  .serumdescr {
+  width: 400px;
+  font-family: 'Poppins', sans-serif;
+  margin: 1% 5%;
+  }
+  
+  .serumdescr h3 {
+  color: #064887;
+  font-weight: 500;
+  font-size: 25px;
+  margin: 5%;
+  }
+  
+  .paysection {
+  width: 50%;
+  margin: 5%;
+  }
+  
+  .serumstripe {
+  padding: 5%;
+  }
+  
+  .serumimg {
+  width: 400px;
+  }
+  
+  .price {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1e578c;
+  }
+  
+  .serumtext {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  margin: 5% 0%;
+  }
+  
+  .paybtn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: #6cb0d4ca;
+  border: 1px solid rgba(255, 255, 255, 0.898);
+  color: rgba(255, 255, 255, 0.898);
+  padding: 6px 15px;
+  font-weight: 400;
+  margin-top: 10%;
+  }
+  
+  .paybtn:hover {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #aee3ffca;
+  border: 1px solid #72b2dc;
+  color: #1C7947;
+  }
+  
+  .paymentsucc h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #1C7947;
+  }
+
+
+/* Footer */
+
+.footer {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  padding: 8% 5% 5% 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #1271b0eb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer p, footer ul {
+  font-size: 10px;
+  color: #51697f;
+}
+
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-unstyled li {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  margin-top: 6%;
+  text-align: center;
+  color: #666;
+}
+
+/* Responsive */
+
+@media all and (max-width:800px) {
+  .waterser {
+    width: 300px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .lf, .sephora {
+    width: 150px;
   }
+  
+  .iherb, .careto {
+    height: 50px;
+  }
+
+}     
+
+@media all and (max-width:500px) {
+
+  .containerMain {
+    position: absolute;
+    margin: 15% 5% 5% 5%;
+    background-color: #59a2e665;
+    padding: 10%;
+  }
+
+
+.heading, .subHeading {
+  color: #0a6334;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 5%;
+}
+
+.subHeading  {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.par {
+  color: #0e3152;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+  margin: 5% 0%;
+}
+
+.buybtn {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 3%;
+  padding: 3% 6%;
+}
+
+.mainScreen {
+  height: 650px;
+} 
+
+.advantages {
+  padding: 5%;
+}
+
+.adv h3 {
+  font-size: 35px;
+}
+
+.adv p {
+  font-size: 15px;
+}
+
+.aboutus {
+  display: flex;
+  flex-direction: column;
+}
+
+.abouttext {
+  margin: 2% 5%;
+  width: 90%;
+  text-align: center;
+}
+
+.headtwo {
+  padding: 5%;
+}
+
+.contentWhy p {
+  font-size: 13px;
+}
+
+.scrolled {
+  display: none;
+}
+
+.products h2 {
+  padding: 5%;
+}
+
+.slider {
+  display: flex;
+}
+
+.sliderimg {
+  display: none;
+}
+
+.reviewtext {
+  width: 80%;
+}
+
+.testimon {
+  padding: 5%;
+}
+
+.serumpay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.serumimg {
+  width: 300px;
+}
+
+.serumdescr {
+  width: 80%;
+  margin: 1% 5%;
+}
+
+.buyserum h2 {
+  padding: 5%;
+}
+
+.paysection {
+  width: 80%;
+}
+
+.waterblock {
+  margin: 5% 13%;
+}
+
+.drops {
+  width: 60px;
+  position: absolute;
+  bottom: 90%;
+  right: 90%
+}
+
+.whyitem {
+  width: 100%;
+  padding: 5%;
+}
+
+.Whyitems {
+  width: 70%;
+}
+
+}
+
+
+/* HAMBURGER */
+
+.hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: #1C7947;
+    margin: 4px 0;
+  }
+
+  .nav-menu.open {
+    display: flex;
+    position: absolute;
+    background-color: rgba(198, 219, 237, 0.949);
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    z-index: 10;
+  }
+
 }
