@@ -492,7 +492,7 @@ nav {
 
 /* Responsive */
 
-@media all and (max-width:800px) {
+@media all and (max-width:912px) {
   .waterser {
     width: 300px;
   }
@@ -610,7 +610,7 @@ nav {
 }
 
 .serumimg {
-  width: 300px;
+  width: 250px;
 }
 
 .serumdescr {
